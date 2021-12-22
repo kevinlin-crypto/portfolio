@@ -1,4 +1,5 @@
 import React, { createContext, useReducer } from "react";
+import DefaultLayout from "./components/DefaultLayout";
 
 import { initialUIState, UIReducer } from "./context/UIContext";
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <UIContext.Provider value={{ uiState, uiDispatch }}>
       <div className="App">
-        <h1 className="text-3xl">App</h1>
+        <DefaultLayout></DefaultLayout>
       </div>
     </UIContext.Provider>
   );

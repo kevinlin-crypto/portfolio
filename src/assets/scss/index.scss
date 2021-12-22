@@ -1,8 +1,70 @@
-.App {
-    margin: 0;
-    padding: 0;
+@import "./fonts.scss";
+@import "./variables.scss";
 
-    h1 {
-        text-align: center;
+.app-layout {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    .left-sidebar-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: $left-sidebar-width;
+        height: 100vh;
+        transform: translateX(-100%);
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .right-sidebar-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: $right-sidebar-width;
+        height: 100vh;
+        transform: translateX(100%);
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .mobile-header-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $header-height;
+        transform: translateY(0);
+        transition: 0.5s;
+    }
+
+    .page-container {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: $header-height;
+        bottom: 0;
+        transition: 0.5s;
+        background-color: $light-theme-bg-color;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        .right-sidebar-container {
+            transform: translateX(0);
+        }
+
+        .left-sidebar-container {
+            transform: translateX(0);
+        }
+
+        .mobile-header-container {
+            transform: translateY(-100%);
+        }
+
+        .page-container {
+            top: 0;
+            left: $left-sidebar-width;
+            right: $right-sidebar-width;
+        }
     }
 }
