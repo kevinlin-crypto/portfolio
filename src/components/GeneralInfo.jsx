@@ -23,7 +23,7 @@ const externalLinks = [
 
 export default function GeneralInfo() {
     return (
-        <div className="flex flex-col gap-2 border-b-2 border-gray-300 pb-4">
+        <div className="flex flex-col gap-2 border-b border-gray-300 pb-4">
             <div className="flex justify-center">
                 <img src={portrait} alt="portrait" className="rounded-full w-36 mt-8 mb-4" />
             </div>

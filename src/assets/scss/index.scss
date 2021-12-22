@@ -15,6 +15,10 @@
         transform: translateX(-100%);
         z-index: 1;
         transition: 0.5s;
+
+        .skill-container {
+            max-height: calc(100vh - 408px);
+        }
     }
 
     .right-sidebar-container {
