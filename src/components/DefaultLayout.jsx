@@ -5,14 +5,14 @@ import React from "react";
 import LeftSidebar from "./LeftSidebar";
 import RightSidebar from "./RightSidebar";
 
-export default function DefaultLayout() {
+export default function DefaultLayout({ children }) {
     return (
         <div className="app-layout">
             <div className="left-sidebar-container">
                 <LeftSidebar />
             </div>
             <div className="page-container">
-                
+                { children }
             </div>
             <div className="right-sidebar-container">
                 <RightSidebar />

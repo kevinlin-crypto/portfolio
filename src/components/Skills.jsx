@@ -153,7 +153,7 @@ export default function Skills() {
             <div className="py-4 flex flex-col gap-2">
                 <h6 className="font-bold mb-2">Extra Skills</h6>
                 { extraSkills.map((skill, key) => (
-                    <div className="flex items-center text-sm gap-2">
+                    <div key={key} className="flex items-center text-sm gap-2">
                         { skill.icon }
                         <p>{ skill.name }</p>
                     </div>
