@@ -4,6 +4,8 @@
 import React from "react";
 import LeftSidebar from "./LeftSidebar";
 import RightSidebar from "./RightSidebar";
+import SimpleBar from "simplebar-react";
+import "simplebar/dist/simplebar.min.css";
 
 export default function DefaultLayout({ children }) {
     return (
@@ -11,9 +13,9 @@ export default function DefaultLayout({ children }) {
             <div className="left-sidebar-container">
                 <LeftSidebar />
             </div>
-            <div className="page-container">
+            <SimpleBar className="page-container">
                 { children }
-            </div>
+            </SimpleBar>
             <div className="right-sidebar-container">
                 <RightSidebar />
             </div>
