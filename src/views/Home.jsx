@@ -4,6 +4,7 @@ import ServiceSection from "../components/home/ServiceSection";
 import WorkHistorySection from "../components/home/WorkHistorySection";
 import EducationHistorySection from "../components/home/EducationHistorySection";
 import ProjectSection from "../components/home/ProjectSection";
+import TestimonialSection from "../components/home/TestimonialSection";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <WorkHistorySection />
             <EducationHistorySection />
             <ProjectSection />
+            <TestimonialSection />
         </div>
     );
 }
