@@ -8,14 +8,14 @@ export default function Education({ education, borderLine }) {
                 <div className="w-full flex gap-4 items-center">
                     <img className="w-24" src={education.logo} alt={education.universityName} />
                     <div className="flex flex-col gap-2">
-                        <p className="text-bold">At { education.universityName }</p>
-                        <p className="text-gray-700 text-sm">{ education.period }</p>
+                        <p className="text-bold dark:text-white">At { education.universityName }</p>
+                        <p className="text-gray-700 text-sm dark:text-gray-300">{ education.period }</p>
                     </div>
                 </div>
             </div>
             <div className="col-span-5 md:col-span-3 flex flex-col gap-4">
-                <h6 className="text-lg font-bold">{ education.role }</h6>
-                <p className="text-gray-700">{ education.description }</p>
+                <h6 className="text-lg font-bold text-white">{ education.role }</h6>
+                <p className="text-gray-700 dark:text-gray-300">{ education.description }</p>
             </div>
         </div>
     );

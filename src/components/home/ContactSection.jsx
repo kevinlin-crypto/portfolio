@@ -51,13 +51,13 @@ const contacts= [
 
 export default function ContactSection() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-36">
             <div className="flex flex-col gap-8">
-                <h2 className="text-2xl font-bold">Leave Us Your Message</h2>
+                <h2 className="text-2xl font-bold dark:text-white">Leave Us Your Message</h2>
                 <ContactForm />
             </div>
             <div className="flex flex-col gap-8">
-                <h2 className="text-2xl font-bold">Contact Information</h2>
+                <h2 className="text-2xl font-bold dark:text-white">Contact Information</h2>
                 <div className="flex flex-col gap-4">
                     { contacts.map((contact, key) => <Contact key={key} contact={contact} />) }
                 </div>

@@ -58,10 +58,10 @@ export default function TestimonialSection() {
     return (
         <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-8 items-center">
-                <h2 className="text-3xl font-bold text-center">Testimonials</h2>
-                <p className="text-center text-gray-700 lg:max-w-xl">Here are some of recommendations from my previous clients.</p>
+                <h2 className="text-3xl font-bold text-center dark:text-white">Testimonials</h2>
+                <p className="text-center text-gray-700 lg:max-w-xl dark:text-gray-300">Here are some of recommendations from my previous clients.</p>
             </div>
-            <div className="p-8 rounded-xl bg-white">
+            <div className="p-8 rounded-xl bg-white dark:bg-dark-bg-primary">
                 <Slider { ...settings }>
                     { reviews.map((review, key) => (
                         <div key={key} className="flex flex-col">
@@ -70,7 +70,7 @@ export default function TestimonialSection() {
                                     <img src={review.avatar} alt={review.name} className="w-16 rounded-full shadow-lg"/>
                                     <div className="flex flex-col">
                                         <p className="text-primary font-bold">{ review.name }</p>
-                                        <p>{ review.job }</p>
+                                        <p className="dark:text-white">{ review.job }</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-2">
@@ -81,7 +81,7 @@ export default function TestimonialSection() {
                                     <Star />
                                 </div>
                             </div>
-                            <p className="mt-4 text-gray-700">"{ review.message }"</p>
+                            <p className="mt-4 text-gray-700 dark:text-gray-300">"{ review.message }"</p>
                         </div>
                     )) }
                 </Slider>

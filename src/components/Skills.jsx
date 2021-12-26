@@ -138,24 +138,24 @@ export default function Skills() {
                 { mainInfo.map((info, key) => (
                     <div key={key} className="flex justify-between items-center">
                         <p className="bg-primary px-2 text-white">{ info.label }</p>
-                        <p>{ info.value }</p>
+                        <p className="dark:text-white">{ info.value }</p>
                     </div>
                 )) }
             </div>
             <div className="py-4 border-b border-gray-300 flex flex-col gap-2">
-                <h6 className="font-bold mb-2">Languages</h6>
+                <h6 className="font-bold mb-2 dark:text-white">Languages</h6>
                 { languages.map((language, key) => <ProgressBar key={key} label={language.name} value={language.level/100} display={`${language.level}%`}/>) }
             </div>
             <div className="py-4 border-b border-gray-300 flex flex-col gap-2">
-                <h6 className="font-bold mb-2">Skills</h6>
+                <h6 className="font-bold mb-2 dark:text-white">Skills</h6>
                 { skills.map((skill, key) => <ProgressBar key={key} label={skill.name} value={skill.level/10} display={`${skill.level}/10`}/>) }
             </div>
             <div className="py-4 flex flex-col gap-2">
-                <h6 className="font-bold mb-2">Extra Skills</h6>
+                <h6 className="font-bold mb-2 dark:text-white">Extra Skills</h6>
                 { extraSkills.map((skill, key) => (
                     <div key={key} className="flex items-center text-sm gap-2">
                         { skill.icon }
-                        <p>{ skill.name }</p>
+                        <p className="dark:text-white">{ skill.name }</p>
                     </div>
                 )) }
             </div>

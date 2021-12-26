@@ -24,10 +24,10 @@ export default function EducationHistorySection() {
     return (
         <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-8 items-center">
-                <h2 className="text-3xl font-bold text-center">Education History</h2>
-                <p className="text-center text-gray-700 lg:max-w-xl">I have bachelor's degree in Robotic Engineering and Master's Degree in Computer Science.</p>
+                <h2 className="text-3xl font-bold text-center dark:text-white">Education History</h2>
+                <p className="text-center text-gray-700 lg:max-w-xl dark:text-gray-300">I have bachelor's degree in Robotic Engineering and Master's Degree in Computer Science.</p>
             </div>
-            <div className="flex flex-col p-8 rounded-xl bg-white">
+            <div className="flex flex-col p-8 rounded-xl bg-white dark:bg-dark-bg-primary">
                 { educations.map((education, key) => <Education key={key} education={education} borderLine={key !== educations.length - 1} />) }
             </div>
         </div>

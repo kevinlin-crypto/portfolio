@@ -16,8 +16,19 @@
         z-index: 1;
         transition: 0.5s;
 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+
+        &.open {
+            transform: translateX(0);
+        }
+
         .skill-container {
             max-height: calc(100vh - 408px);
+        }
+
+        .close-btn {
+            top: -8px;
+            right: -24px;
         }
     }
 
@@ -31,9 +42,15 @@
         z-index: 1;
         transition: 0.5s;
 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+
         .right-sidebar-wrapper {
             display: grid;
             grid-template-rows: 24px 1fr;
+        }
+
+        &.open {
+            transform: translateX(0);
         }
     }
 
@@ -45,6 +62,8 @@
         height: $header-height;
         transform: translateY(0);
         transition: 0.5s;
+
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
     }
 
     .page-container {
@@ -54,7 +73,6 @@
         top: $header-height;
         bottom: 0;
         transition: 0.5s;
-        background-color: $light-theme-bg-color;
     }
 
     .detail-modal {
@@ -76,6 +94,7 @@
 
         .mobile-header-container {
             transform: translateY(-100%);
+            box-shadow: none;
         }
 
         .page-container {
@@ -89,4 +108,8 @@
 .simplebar-track {
     right: -8px !important;
     width: 8px !important;
+}
+
+.slick-prev::before, .slick-next::before {
+    color: gray
 }

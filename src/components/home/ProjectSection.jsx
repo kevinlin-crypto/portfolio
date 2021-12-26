@@ -178,8 +178,8 @@ export default function ProjectSection() {
     return (
         <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-8 items-center">
-                <h2 className="text-3xl font-bold text-center">Projects</h2>
-                <p className="text-center text-gray-700 lg:max-w-xl">I have built several products on my own and been engaged in large projects. Here are some of them.</p>
+                <h2 className="text-3xl font-bold text-center dark:text-white">Projects</h2>
+                <p className="text-center text-gray-700 lg:max-w-xl dark:text-gray-300">I have built several products on my own and been engaged in large projects. Here are some of them.</p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 { projects.map((project, key) => <Project project={project} key={key} />) }
