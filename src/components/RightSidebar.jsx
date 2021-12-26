@@ -32,7 +32,7 @@ export default function RightSidebar() {
             <div className="h-full flex flex-col justify-center items-center gap-8">
                 { menuItems.map((item, key) => (
                     <div key={key} className="flex justify-center">
-                        <div className="rounded-full bg-primary p-2 cursor-pointer">
+                        <div className="rounded-full p-2 bg-primary cursor-pointer">
                             { item.icon }
                         </div>
                     </div>

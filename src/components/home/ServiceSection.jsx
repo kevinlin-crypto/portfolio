@@ -37,7 +37,7 @@ const services = [
 
 export default function ServiceSection() {
     return (
-        <div className="flex flex-col gap-8">
+        <div id="service" className="flex flex-col gap-8">
             <div className="flex flex-col gap-8 items-center">
                 <h2 className="text-3xl font-bold text-center dark:text-white">My Services</h2>
                 <p className="text-center text-gray-700 lg:max-w-xl dark:text-gray-300">I have been in the industry for 8+ years and gained rich experience in web and mobile development. In business, we are not doing a college project, but face actual customers and I can help you launch your product with my expertise and experience</p>
