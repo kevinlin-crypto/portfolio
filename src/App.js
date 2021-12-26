@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useReducer } from "react";
 import DefaultLayout from "./components/DefaultLayout";
 import Home from "./views/Home";
+import ReactTooltip from "react-tooltip";
 
 import { initialUIState, UIReducer } from "./context/UIContext";
 
@@ -24,6 +25,7 @@ function App() {
         <DefaultLayout>
           <Home />
         </DefaultLayout>
+        <ReactTooltip effect="solid" />
       </div>
     </UIContext.Provider>
   );
