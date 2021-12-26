@@ -56,7 +56,7 @@ const settings = {
 
 export default function TestimonialSection() {
     return (
-        <div className="flex flex-col gap-8">
+        <div id="testimonial" className="flex flex-col gap-8">
             <div className="flex flex-col gap-8 items-center">
                 <h2 className="text-3xl font-bold text-center dark:text-white">Testimonials</h2>
                 <p className="text-center text-gray-700 lg:max-w-xl dark:text-gray-300">Here are some of recommendations from my previous clients.</p>
