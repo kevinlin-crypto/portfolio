@@ -10,13 +10,13 @@ export default function MobileHeader() {
     return (
         <div className="w-full h-full p-4 flex justify-between items-center bg-white dark:bg-dark-bg-primary">
             <div className="flex cursor-pointer" onClick={ () => uiDispatch({ type: "OPEN_LEFT_MENU" }) }>
-                <HambergerMenu color={ uiState.dark ? "#ffffff" : "#292D32" } />
+                <HambergerMenu color={ uiState.darkMode ? "#ffffff" : "#292D32" } />
             </div>
             <div className="flex cursor-pointer" onClick={ () => uiDispatch({ type: "TOGGLE_THEME" })}>
-                { uiState.dark ? <Sun size={24} className="text-primary cursor-pointer" /> : <Moon size={24} className="text-primary cursor-pointer" />}
+                { uiState.darkMode ? <Sun size={24} className="text-primary cursor-pointer" /> : <Moon size={24} className="text-primary cursor-pointer" />}
             </div>
             <div className="flex cursor-pointer" onClick={ () => uiDispatch({ type: "OPEN_RIGHT_MENU" }) }>
-                <More color={ uiState.dark ? "#ffffff" : "#292D32" } />
+                <More color={ uiState.darkMode ? "#ffffff" : "#292D32" } />
             </div>
         </div>
     );

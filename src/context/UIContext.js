@@ -50,17 +50,17 @@ export const UIReducer = (state, action) => {
             };
 
         case "TOGGLE_THEME":
-            if (state.dark) {
+            if (state.darkMode) {
                 localStorage.setItem("theme", "light");
                 return {
                     ...state,
-                    dark: false
+                    darkMode: false
                 }
             } else {
                 localStorage.setItem("theme", "dark");
                 return {
                     ...state,
-                    dark: true
+                    darkMode: true
                 }
             }
 

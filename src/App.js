@@ -12,12 +12,12 @@ function App() {
   const [uiState, uiDispatch] = useReducer(UIReducer, initialUIState);
 
   useEffect(() => {
-    if (uiState.dark) {
+    if (uiState.darkMode) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [uiState.dark]);
+  }, [uiState.darkMode]);
 
   return (
     <UIContext.Provider value={{ uiState, uiDispatch }}>

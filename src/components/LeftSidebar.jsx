@@ -14,7 +14,7 @@ export default function LeftSidebar() {
     return (
         <div className="w-full h-full px-8 py-4 flex flex-col bg-white duration-500 dark:bg-dark-bg-primary">
             <div className="relative w-full h-full flex flex-col">
-                { uiState.collapsedMenu && <div onClick={ () => uiDispatch({ type: "CLOSE_LEFT_MENU" }) } className="absolute close-btn flex cursor-pointer"><CloseSquare color={ uiState.dark ? "#ffffff" : "#292D32" } /></div> }
+                { uiState.collapsedMenu && <div onClick={ () => uiDispatch({ type: "CLOSE_LEFT_MENU" }) } className="absolute close-btn flex cursor-pointer"><CloseSquare color={ uiState.darkMode ? "#ffffff" : "#292D32" } /></div> }
                 <GeneralInfo />
                 <SimpleBar className="skill-container">
                     <Skills />
