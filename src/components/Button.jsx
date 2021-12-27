@@ -4,6 +4,9 @@ export default function Button({ type = "primary", text, icon, size="md", corner
     let className = "cursor-pointer flex justify-center items-center gap-2";
 
     switch (type) {
+        case "disabled":
+            className += " bg-gray-700 text-white";
+            break;
         default:
             className += " bg-primary text-white";
     }
