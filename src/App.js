@@ -2,6 +2,7 @@ import React, { createContext, useEffect, useReducer } from "react";
 import DefaultLayout from "./components/DefaultLayout";
 import Home from "./views/Home";
 import ReactTooltip from "react-tooltip";
+import { NotificationContainer } from "react-notifications";
 
 import { initialUIState, UIReducer } from "./context/UIContext";
 
@@ -26,6 +27,7 @@ function App() {
           <Home />
         </DefaultLayout>
         <ReactTooltip effect="solid" />
+        <NotificationContainer />
       </div>
     </UIContext.Provider>
   );

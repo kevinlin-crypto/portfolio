@@ -6,10 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import "./assets/css/index.css";
 import "./assets/scss/index.scss";
 
+import 'react-notifications/lib/notifications.css';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root')
 );
 
