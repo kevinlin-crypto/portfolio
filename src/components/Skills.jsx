@@ -14,11 +14,11 @@ const mainInfo = [
     },
     {
         label: "Phone:",
-        value: "(661) 228-0244"
+        value: "(469) 248-5696"
     },
     {
         label: "Address:",
-        value: "Pecos, TX"
+        value: "Port Jervis, NY"
     }
 ];
 
@@ -28,12 +28,12 @@ const languages = [
         level: 100
     },
     {
-        name: "Chinese",
-        level: 100
+        name: "Vietnamese",
+        level: 60
     },
     {
         name: "Japanese",
-        level: 70
+        level: 30
     }
 ];
 

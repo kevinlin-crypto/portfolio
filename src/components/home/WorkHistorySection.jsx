@@ -1,20 +1,26 @@
 import React from "react";
 import upworkLogo from "../../assets/img/upwork.png";
 import yklmLogo from "../../assets/img/yklm.png";
-import centuryLogo from "../../assets/img/century3.png";
+import rolzoLogo from "../../assets/img/rolzo.png";
+import toptalLogo from "../../assets/img/toptal.png";
+import ariensLogo from "../../assets/img/ariens.png";
 import Work from "../Work";
 
 const works = [
     {
         logo: upworkLogo,
         companyName: "Upwork",
-        role: "Senior Web Developer",
-        period: "2017-present",
+        role: "Senior full-stack developer",
+        period: "2018-present",
         roles: [
-            "28 Jobs done with 96% of JSS (Job Success Score)",
-            "Top rated developer since 2019",
-            "Developed 4 ecommerce websites, 1 CMS, 1 SaaS platforms using Laravel, MERN and Vue",
-            "Provided startups with technical solutions on cloud services, DevOps, and coding challenges"
+            "Worked on a frontend development of an NFT marketplace, using React, NextJS and GraphQL",
+            "Built a UI component library and storybook using ReactJS",
+            "Worked as a frontend-focused full-stack developer on a Defi system development, leading the frontend team and helping the project manager with tokenomics and governance token business logic",
+            "Developed a JavaScript library for conversion between S2 geometry system and geographic coordinate system as a solution to a VR/AR gamified tour service",
+            "Worked as a lead developer for a RV rental SaaS platform, having structured the whole system and database and contributing to the REST API development",
+            "Worked as a frontend developer for a tour cloud system development",
+            "Worked as a full-stack developer for a marketing service company, developing 2 marketing services and implementing subscription management system",
+            "Achieved 94% of JSS (Job success score) and top plus developer badge",
         ]
     },
     {
@@ -23,24 +29,51 @@ const works = [
         role: "Senior Lead Developer",
         period: "2019-2021",
         roles: [
-            "Coached 2 junior developers in code standards",
-            "Developed a REST API using Laravel PHP framework",
-            "Developed a developer portal front end",
-            "Spearheaded transition from firebase to AWS, saving company $2500+ monthly and increasing load speeds by an average of 30%",
-            "Developed documentation to teach new team members company standards and best practices in React.js and Laravel",
-            "Addressed complex issues with real-time lead prioritization using WebSocket connectivity"
+            "Directly worked with CTO or project manager to discuss the project roadmap and timeline",
+            "Developed an online auction platform using Laravel and VueJS",
+            "Integrated Mozilla Hubs into the gallery view of the mobile app",
+            "Oversaw a team of 4 to write scalable code and clear documentation",
+            "Managed unit testing and UI testing for new features, bugs and operating speed",
+            "Handled all the DevOps and cloud services to launch and run MVP for couple of months",
+            "Managed all bug reports and customer feedbacks, and completed first round of system upgrade"
         ]
     },
     {
-        logo: centuryLogo,
-        companyName: "Century 3 Inc",
-        role: "Senior Front-end Developer",
-        period: "2012-2014",
+        logo: toptalLogo,
+        companyName: "Toptal",
+        role: "Senior full-stack developer",
+        period: "2018-2019",
         roles: [
-            "Created a Mobile Responsive User Experience with ReactJS that allowed cross-platform accessibility to the website on any device with primary use on mobile",
-            "Built API following RESTful standards to allow users to submit information by storing data in MongoDB",
-            "Partnered with data science to develop the front end for a product recommendation engine that increased user time on page by 4 minutes",
-            "Curated over 50 website changes to increase the user flow and understanding of all platform capabilities and features"
+            "Contributed to the in-house UI library to create reusable components in ReactJS",
+            "Created a MVP version of a logo maker online service using Laravel, VueJS and MongoDB",
+            "Implemented an online payment system and a subscription and membership management system for a media company to improve the customer conversion rate",
+            "Worked within an agile scrum team, contributing to 100% CICD and frontend development"
+        ]
+    },
+    {
+        logo: ariensLogo,
+        companyName: "AriensCo",
+        role: "Mid-senior full-stack developer",
+        period: "2015-2017",
+        roles: [
+            "Upgraded the company legacy system",
+            "Worked on the company internal employee management system",
+            "Set up the company payroll management portal",
+            "Developed, tested, debugged and documented the company task management and chat system",
+            "Developed dynamic and customizable company notification email system",
+            "Worked with PM, QA and customer support to figure out bugs and customer feedbacks from production environment"
+        ]
+    },
+    {
+        logo: rolzoLogo,
+        companyName: "ROLZO",
+        role: "Junior frontend developer",
+        period: "2013-2015",
+        roles: [
+            "Assigned to e-commerce team, and participated in designing improved software and customer platform using algorithms to match users to product",
+            "Presented software development and lifecycle reports to CTO and CEO with 2 other senior developers, receiving recognition for ideas and implementation",
+            "Migrated the frontend application from ordinary blade template to ReactJS",
+            "Developed mobile first responsive frontend app for customer and seller portal, closely working with the designer"
         ]
     }
 ];

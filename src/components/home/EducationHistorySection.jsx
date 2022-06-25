@@ -1,22 +1,22 @@
 import React from "react";
-import nankaiLogo from "../../assets/img/nankai.png";
+import tdtLogo from "../../assets/img/tdt.png";
 import fredoniaLogo from "../../assets/img/fredonia.png";
 import Education from "../Education";
 
 const educations = [
     {
-        logo: nankaiLogo,
-        universityName: "Nankai University",
+        logo: fredoniaLogo,
+        universityName: "State University of New York at Fredonia",
+        role: "Bachelor's Degree | Computer Science",
+        period: "2014-2018",
+        description: "The Bachelor of Science (BS) in Computer Science and Information Systems program offers concentrations in Computer Science or Information Systems, as well as a preparatory Fast Track for those without a computer science background. It prepares you to enter and excel in a career as an administrator, analyst, designer, developer, or programmer leading technology teams."
+    },
+    {
+        logo: tdtLogo,
+        universityName: "Ton Duc Thang University",
         role: "Bachelor's Degree | Robotics Technology",
         period: "2009-2013",
         description: "Robotics Technology is the bachelor degree course with many interesting robotic subjects and related courses like Motion Planning, Artificial Intelligence, Machine Learning, Computer Vision and Computer Programming of Robotics."
-    },
-    {
-        logo: fredoniaLogo,
-        universityName: "State University of New York at Fredonia",
-        role: "Master's Degree | Computer Science",
-        period: "2017-2018",
-        description: "The Master of Science (MS) in Computer Science and Information Systems program offers concentrations in Computer Science or Information Systems, as well as a preparatory Fast Track forthose without a computer science background. It prepares you to enter and excel in a career as anadministrator, analyst, designer, developer, or programmer leading technology teams."
     }
 ];
 

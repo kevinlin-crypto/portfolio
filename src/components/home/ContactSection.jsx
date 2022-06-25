@@ -9,15 +9,15 @@ const contacts= [
         items: [
             {
                 title: "Address",
-                value: "1406 W 8th Street"
+                value: "60 Hammer St"
             },
             {
                 title: "City, State",
-                value: "Pecos, TX"
+                value: "Port Jervis, NY"
             },
             {
                 title: "Postal code",
-                value: "79772"
+                value: "12771"
             }
         ],
     },
@@ -26,7 +26,7 @@ const contacts= [
         items: [
             {
                 title: "Email",
-                value: "philip_acho@outlook.com"
+                value: "cecescrazydreams@gmail.com"
             },
             {
                 title: "Skype",
@@ -43,7 +43,7 @@ const contacts= [
         items: [
             {
                 title: "Phone",
-                value: "(661) 228-0244"
+                value: "(469) 248-5696"
             }
         ]
     }

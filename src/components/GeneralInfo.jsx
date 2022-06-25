@@ -4,7 +4,7 @@ import portrait from "../assets/img/portrait.png";
 
 const externalLinks = [
     {
-        link: "https://www.facebook.com/liqiang1996612/",
+        link: "https://www.facebook.com/",
         icon: <Facebook className="text-white" size={16}/>
     },
     {
@@ -12,7 +12,7 @@ const externalLinks = [
         icon: <Twitter className="text-white" size={16}/>
     },
     {
-        link: "https://www.linkedin.com/in/philip-acho-4ba1a019b/",
+        link: "https://www.linkedin.com/in/kevin-le-4ba1a019b/",
         icon: <Linkedin className="text-white" size={16}/>
     },
     {
@@ -27,7 +27,7 @@ export default function GeneralInfo() {
             <div className="flex justify-center">
                 <img src={portrait} alt="portrait" className="rounded-full w-36 mt-8 mb-4" />
             </div>
-            <h5 className="text-center font-bold dark:text-white">Philip Acho</h5>
+            <h5 className="text-center font-bold dark:text-white">Kevin Lin</h5>
             <h6 className="text-center dark:text-white">Senior Full-stack Developer</h6>
             <div className="flex items-center justify-center gap-2">
                 { externalLinks.map((link, key) => (
